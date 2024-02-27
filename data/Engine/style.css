@@ -1,0 +1,58 @@
+body{
+    background-color: rgb(15,15,15);
+    height: 98vh;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    font-family: monospace;
+    padding: 0;
+    margin: 0;
+}
+
+.triangle{
+    width: 0; 
+    height: 0; 
+    transform-style: preserve-3d;
+    position: absolute;
+}
+
+h2{
+    display: inline;
+}
+
+h1{
+    display: inline;
+    margin-left: 25px;
+}
+
+input{
+    margin-top: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+#scene {
+    top: calc(50% - 125px);
+    position: absolute;
+    transform-style: preserve-3d;
+    margin: 0;
+    padding: 0;
+}
+.cube{
+    position: absolute;
+    transform-style: preserve-3d;
+    margin: 0;
+    padding: 0;
+}
+.cube__face {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    /*border: 1px solid black;*/
+    backface-visibility: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0,0,0,0.1);
+}

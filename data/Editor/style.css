@@ -1,0 +1,75 @@
+body{
+    background-color: rgb(15,15,15);
+    height: 98vh;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    font-family: monospace;
+    padding: 0;
+}
+
+#controls{
+    background-color: white;
+    position: absolute;
+    width: 250px;
+    height: 150px;
+    top: calc(100% - 150px);
+    left: 0px;
+    text-align: center;
+}
+
+#keybinds{
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    height: 40px;
+    overflow: hidden;
+    z-index: 90;
+    margin-top: -10px;
+    padding-top: 10px;
+}
+
+h2{
+    display: inline;
+}
+
+h1{
+    display: inline;
+    margin-left: 25px;
+}
+
+input{
+    margin-top: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+#scene {
+    top: calc(50% - 125px);
+    transform: perspective(0px) rotateY(-45deg);
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    transform-style: preserve-3d;
+    margin: 0;
+}
+.cube{
+    position: absolute;
+    transform-style: preserve-3d;
+}
+.cube__face {
+    position: absolute;
+    width: 102px;
+    height: 102px;
+    border: 1px dotted black;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.cube__face--front  { transform: rotateY(  0deg) translateZ(50px); }
+.cube__face--right  { transform: rotateY( 90deg) translateZ(50px); }
+.cube__face--back   { transform: rotateY(180deg) translateZ(50px); }
+.cube__face--left   { transform: rotateY(-90deg) translateZ(50px); }
+.cube__face--top    { transform: rotateX( 90deg) translateZ(50px); }
+.cube__face--bottom { transform: rotateX(-90deg) translateZ(50px); }

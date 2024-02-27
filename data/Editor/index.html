@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-hate chamber</title>
+    <link rel="stylesheet" href="https://htd.lol/Editor/style.css">
+</head>
+<body>
+    <div id="keybinds">
+        <h1>[WASD]</h1><h2>movement</h2>
+        <h1>[Q]</h1><h2>up</h2>
+        <h1>[E]</h1><h2>down</h2>
+        <h1>[⇦⇨⇧⇩]</h1><h2>camera</h2>
+        <h1>[CTRL+⇦⇨⇧⇩]</h1><h2>camera movement</h2>
+        <h1>[R]</h1><h2>place/destroy</h2>
+    </div>
+    <div id="scene">
+        <div class="cube" id="selector" style="transform: translateY(-1px) translateX(0px);">
+            <div class="cube__face cube__face--front" style="transform: rotateY(0deg) translateZ(51px); border-style: solid; border-color: rgb(255,255,255);"></div>
+            <div class="cube__face cube__face--back" style="transform: rotateY(180deg) translateZ(51px); border-style: solid; border-color: rgb(255,255,255);"></div>
+            <div class="cube__face cube__face--right" style="transform: rotateY(90deg) translateZ(51px); border-style: solid; border-color: rgb(255,255,255);"></div>
+            <div class="cube__face cube__face--left" style="transform: rotateY(-90deg) translateZ(51px); border-style: solid; border-color: rgb(255,255,255);"></div>
+            <div class="cube__face cube__face--top" style="transform: rotateX( 90deg) translateZ(51px); border-style: solid; border-color: rgb(255,255,255);"></div>
+            <div class="cube__face cube__face--bottom" style="transform: rotateX(-90deg) translateZ(51px); border-style: solid; border-color: rgb(255,255,255);"></div>
+        </div>
+    </div>
+    <div id="controls">
+        <label for="colorPicker">Block color:</label>
+        <input type="color" id="colorPicker"><br>
+        <input type="button" id="colorCopy" value="Copy color"><br>
+        <input type="button" id="clr" value="Clear all"><br><br>
+        <input type="button" id="export" value="Export">
+    </div>
+    <script src="https://htd.lol/Editor/main.js"></script>
+</body>
+</html>
