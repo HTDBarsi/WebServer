@@ -20,7 +20,7 @@ http.createServer((req,res) => {
         }
         return sendData(res, customs.getFile("/index.html"));
     }
-    // is is directory \\
+    // is directory \\
     if (fs.statSync("./data"+path).isDirectory()) {
         path = (path.endsWith("/") ? path : path+"/") +"index.html";
     }
